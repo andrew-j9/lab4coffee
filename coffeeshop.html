@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="coffeeshop.css">
+
+</head>
+<body>
+<h1>Coffee Shop</h1>
+
+  <input type="button" id="my_directions" value="Click for directions" />
+ <div id="how_to"></div>
+
+<h3>Menu</h3>
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Volume</th>
+	 <th>Price</th>
+  </tr>
+  <tr>
+    <td>Small Coffee</td>
+    <td>9 oz</td>
+	<td>$1.75</td>
+  </tr>
+  <tr>
+    <td>Medium Coffee</td>
+    <td>12 oz</td>
+	 <td>$1.90</td>
+  </tr>
+    <tr>
+    <td>Large Coffee</td>
+    <td>15 oz</td>
+	 <td>$2.00</td>
+  </tr>
+</table>
+<!--/buttons and label for small cup/-->
+
+
+<br>
+<input type="button" id="remove_small" value="-" />
+<label for="small_number">Small Cups </label>
+<input type="textbox" class="cupnumber" name="small_number" id="small_number"/>
+<input type="button" id="add_small" value="+" />
+
+<!--/buttons and label for medium cup/-->
+<br>
+<input type="button" id="remove_medium" value="-" />
+<label for="medium_number">Medium Cups </label>
+<input type="textbox" class="cupnumber" name="medium_number" id="medium_number"/>
+<input type="button" id="add_medium" value="+" />
+
+<!--/buttons and label for large cup/-->
+<br>
+<input type="button" id="remove_large" value="-" />
+<label for="large_number">Large Cups </label>
+<input type="textbox" class="cupnumber" name="large_number" id="large_number"/>
+<input type="button" id="add_large" value="+" />
+
+<!--/clear/-->
+<br>
+<input type="button" id="clear_button" value="Clear" />
+
+
+
+<!--/calculations/-->
+<br>
+<br>
+<label for="sum_price">Price sum </label>
+<input type="textbox" class="calculation" name="sum_price" id="sum_price"/>
+
+<br>
+<label for="price_tax">9.25% tax </label>
+<input type="textbox" class="calculation" name="price_tax" id="price_tax"/>
+<br>
+
+<label for="price_total">Price total </label>
+<input type="textbox" class="calculation" name="price_total" id="price_total"/>
+
+<br>
+<label for="volume_total">Total volume </label>
+<input type="textbox" class="calculation" name="volume_total" id="volume_total"/>
+<br>
+<br>
+<input type="button" id="complete_order" value="Complete order" />
+<div id="order_message"></div>
+
+<script src="coffeeshop.js"></script>
+</body>
+</html>
